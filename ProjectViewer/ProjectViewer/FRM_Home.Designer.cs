@@ -24,85 +24,29 @@
     /// </summary>
     private void InitializeComponent() {
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_Home));
-      this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-      this.lv_Projects = new System.Windows.Forms.ListView();
-      this.tlp_HomeContainer = new System.Windows.Forms.TableLayoutPanel();
-      this.label1 = new System.Windows.Forms.Label();
-      this.tv_Folders = new System.Windows.Forms.TreeView();
-      this.lbl_Treeview = new System.Windows.Forms.Label();
+      this.ts_TopMenu = new System.Windows.Forms.ToolStrip();
       this.tsb_AddPrj = new System.Windows.Forms.ToolStripButton();
-      this.toolStrip1.SuspendLayout();
-      this.tlp_HomeContainer.SuspendLayout();
+      this.PNL_SideMenu = new System.Windows.Forms.Panel();
+      this.PNL_ProjectData = new System.Windows.Forms.Panel();
+      this.LBL_ProjectName = new System.Windows.Forms.Label();
+      this.PB_ProjectIcon = new System.Windows.Forms.PictureBox();
+      this.PNL_ChildForm = new System.Windows.Forms.Panel();
+      this.PNL_Buttons = new System.Windows.Forms.Panel();
+      this.ts_TopMenu.SuspendLayout();
+      this.PNL_SideMenu.SuspendLayout();
+      this.PNL_ProjectData.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.PB_ProjectIcon)).BeginInit();
       this.SuspendLayout();
       // 
-      // toolStrip1
+      // ts_TopMenu
       // 
-      this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+      this.ts_TopMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsb_AddPrj});
-      this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-      this.toolStrip1.Name = "toolStrip1";
-      this.toolStrip1.Size = new System.Drawing.Size(395, 25);
-      this.toolStrip1.TabIndex = 0;
-      this.toolStrip1.Text = "toolStrip1";
-      // 
-      // lv_Projects
-      // 
-      this.lv_Projects.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.lv_Projects.HideSelection = false;
-      this.lv_Projects.Location = new System.Drawing.Point(4, 35);
-      this.lv_Projects.Name = "lv_Projects";
-      this.lv_Projects.Size = new System.Drawing.Size(142, 390);
-      this.lv_Projects.TabIndex = 1;
-      this.lv_Projects.UseCompatibleStateImageBehavior = false;
-      // 
-      // tlp_HomeContainer
-      // 
-      this.tlp_HomeContainer.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-      this.tlp_HomeContainer.ColumnCount = 2;
-      this.tlp_HomeContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.97468F));
-      this.tlp_HomeContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.02532F));
-      this.tlp_HomeContainer.Controls.Add(this.label1, 0, 0);
-      this.tlp_HomeContainer.Controls.Add(this.lv_Projects, 0, 1);
-      this.tlp_HomeContainer.Controls.Add(this.tv_Folders, 1, 1);
-      this.tlp_HomeContainer.Controls.Add(this.lbl_Treeview, 1, 0);
-      this.tlp_HomeContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.tlp_HomeContainer.Location = new System.Drawing.Point(0, 25);
-      this.tlp_HomeContainer.Name = "tlp_HomeContainer";
-      this.tlp_HomeContainer.RowCount = 2;
-      this.tlp_HomeContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.161125F));
-      this.tlp_HomeContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.83887F));
-      this.tlp_HomeContainer.Size = new System.Drawing.Size(395, 429);
-      this.tlp_HomeContainer.TabIndex = 2;
-      // 
-      // label1
-      // 
-      this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-      this.label1.Location = new System.Drawing.Point(4, 1);
-      this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(142, 30);
-      this.label1.TabIndex = 4;
-      this.label1.Text = "Progetti";
-      this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-      // 
-      // tv_Folders
-      // 
-      this.tv_Folders.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.tv_Folders.Location = new System.Drawing.Point(153, 35);
-      this.tv_Folders.Name = "tv_Folders";
-      this.tv_Folders.Size = new System.Drawing.Size(238, 390);
-      this.tv_Folders.TabIndex = 2;
-      // 
-      // lbl_Treeview
-      // 
-      this.lbl_Treeview.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.lbl_Treeview.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.lbl_Treeview.Location = new System.Drawing.Point(153, 1);
-      this.lbl_Treeview.Name = "lbl_Treeview";
-      this.lbl_Treeview.Size = new System.Drawing.Size(238, 30);
-      this.lbl_Treeview.TabIndex = 3;
-      this.lbl_Treeview.Text = "Mappatura cartelle";
-      this.lbl_Treeview.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.ts_TopMenu.Location = new System.Drawing.Point(0, 0);
+      this.ts_TopMenu.Name = "ts_TopMenu";
+      this.ts_TopMenu.Size = new System.Drawing.Size(716, 25);
+      this.ts_TopMenu.TabIndex = 0;
+      this.ts_TopMenu.Text = "toolStrip1";
       // 
       // tsb_AddPrj
       // 
@@ -112,18 +56,90 @@
       this.tsb_AddPrj.Size = new System.Drawing.Size(125, 22);
       this.tsb_AddPrj.Text = "Aggiungi progetto";
       // 
+      // PNL_SideMenu
+      // 
+      this.PNL_SideMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+      this.PNL_SideMenu.AutoScroll = true;
+      this.PNL_SideMenu.BackColor = System.Drawing.SystemColors.WindowFrame;
+      this.PNL_SideMenu.Controls.Add(this.PNL_Buttons);
+      this.PNL_SideMenu.Controls.Add(this.PNL_ProjectData);
+      this.PNL_SideMenu.Location = new System.Drawing.Point(0, 28);
+      this.PNL_SideMenu.Name = "PNL_SideMenu";
+      this.PNL_SideMenu.Size = new System.Drawing.Size(257, 653);
+      this.PNL_SideMenu.TabIndex = 1;
+      // 
+      // PNL_ProjectData
+      // 
+      this.PNL_ProjectData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(52)))));
+      this.PNL_ProjectData.Controls.Add(this.LBL_ProjectName);
+      this.PNL_ProjectData.Controls.Add(this.PB_ProjectIcon);
+      this.PNL_ProjectData.Dock = System.Windows.Forms.DockStyle.Top;
+      this.PNL_ProjectData.Location = new System.Drawing.Point(0, 0);
+      this.PNL_ProjectData.Name = "PNL_ProjectData";
+      this.PNL_ProjectData.Size = new System.Drawing.Size(257, 207);
+      this.PNL_ProjectData.TabIndex = 1;
+      // 
+      // LBL_ProjectName
+      // 
+      this.LBL_ProjectName.Font = new System.Drawing.Font("Segoe UI Semilight", 12F);
+      this.LBL_ProjectName.ForeColor = System.Drawing.Color.White;
+      this.LBL_ProjectName.Location = new System.Drawing.Point(7, 151);
+      this.LBL_ProjectName.Name = "LBL_ProjectName";
+      this.LBL_ProjectName.Size = new System.Drawing.Size(233, 29);
+      this.LBL_ProjectName.TabIndex = 1;
+      this.LBL_ProjectName.Text = "<PROJECT_NAME>";
+      this.LBL_ProjectName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
+      // PB_ProjectIcon
+      // 
+      this.PB_ProjectIcon.BackColor = System.Drawing.SystemColors.WindowFrame;
+      this.PB_ProjectIcon.Location = new System.Drawing.Point(64, 13);
+      this.PB_ProjectIcon.Name = "PB_ProjectIcon";
+      this.PB_ProjectIcon.Size = new System.Drawing.Size(130, 130);
+      this.PB_ProjectIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+      this.PB_ProjectIcon.TabIndex = 0;
+      this.PB_ProjectIcon.TabStop = false;
+      // 
+      // PNL_ChildForm
+      // 
+      this.PNL_ChildForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+      this.PNL_ChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+      this.PNL_ChildForm.Location = new System.Drawing.Point(257, 28);
+      this.PNL_ChildForm.Name = "PNL_ChildForm";
+      this.PNL_ChildForm.Size = new System.Drawing.Size(459, 653);
+      this.PNL_ChildForm.TabIndex = 2;
+      // 
+      // PNL_Buttons
+      // 
+      this.PNL_Buttons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+      this.PNL_Buttons.AutoScroll = true;
+      this.PNL_Buttons.BackColor = System.Drawing.SystemColors.WindowFrame;
+      this.PNL_Buttons.Location = new System.Drawing.Point(0, 204);
+      this.PNL_Buttons.Name = "PNL_Buttons";
+      this.PNL_Buttons.Size = new System.Drawing.Size(257, 449);
+      this.PNL_Buttons.TabIndex = 2;
+      // 
       // FRM_Home
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(395, 454);
-      this.Controls.Add(this.tlp_HomeContainer);
-      this.Controls.Add(this.toolStrip1);
+      this.ClientSize = new System.Drawing.Size(716, 681);
+      this.Controls.Add(this.PNL_ChildForm);
+      this.Controls.Add(this.PNL_SideMenu);
+      this.Controls.Add(this.ts_TopMenu);
       this.Name = "FRM_Home";
       this.Text = "ProjectViewer";
-      this.toolStrip1.ResumeLayout(false);
-      this.toolStrip1.PerformLayout();
-      this.tlp_HomeContainer.ResumeLayout(false);
+      this.Load += new System.EventHandler(this.FRM_Home_Load);
+      this.Shown += new System.EventHandler(this.FRM_Home_Shown);
+      this.ts_TopMenu.ResumeLayout(false);
+      this.ts_TopMenu.PerformLayout();
+      this.PNL_SideMenu.ResumeLayout(false);
+      this.PNL_ProjectData.ResumeLayout(false);
+      ((System.ComponentModel.ISupportInitialize)(this.PB_ProjectIcon)).EndInit();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -131,13 +147,14 @@
 
     #endregion
 
-    private System.Windows.Forms.ToolStrip toolStrip1;
-    private System.Windows.Forms.ListView lv_Projects;
-    private System.Windows.Forms.TableLayoutPanel tlp_HomeContainer;
-    private System.Windows.Forms.TreeView tv_Folders;
-    private System.Windows.Forms.Label lbl_Treeview;
-    private System.Windows.Forms.Label label1;
+    private System.Windows.Forms.ToolStrip ts_TopMenu;
     private System.Windows.Forms.ToolStripButton tsb_AddPrj;
+    private System.Windows.Forms.Panel PNL_SideMenu;
+    private System.Windows.Forms.Panel PNL_ProjectData;
+    private System.Windows.Forms.Label LBL_ProjectName;
+    private System.Windows.Forms.PictureBox PB_ProjectIcon;
+    private System.Windows.Forms.Panel PNL_ChildForm;
+    private System.Windows.Forms.Panel PNL_Buttons;
   }
 }
 
