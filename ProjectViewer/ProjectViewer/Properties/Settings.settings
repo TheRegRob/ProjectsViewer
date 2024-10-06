@@ -1,7 +1,12 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ProjectViewer.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FilesFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ProjectViewer\Files\</Value>
+    </Setting>
+    <Setting Name="ProjectsFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ProjectsList.pjv</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

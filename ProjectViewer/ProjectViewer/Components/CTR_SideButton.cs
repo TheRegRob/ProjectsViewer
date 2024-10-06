@@ -24,12 +24,19 @@ namespace ProjectViewer {
       FlatAppearance.BorderSize = 0;
       Font = new Font("Segoe UI Semilight", 10);
       Text = btnName;
+      Name = "bt_" + btnName;
       TextAlign = ContentAlignment.MiddleLeft;
       Dock = DockStyle.Top;
       Location = new Point(0, 207);
       Padding = new Padding(10, 0, 0, 0);
       Size = new Size(257, 38);
       UseVisualStyleBackColor = true;
+    }
+
+    public event EventHandler Clicked;
+
+    private void bt_Click(object sender, EventArgs e) {
+      Clicked(this, e);
     }
   }
 }
